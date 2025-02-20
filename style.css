@@ -32,3 +32,17 @@
   .button:active {
   color: rgb(147, 117, 182);
   }
+
+.title{
+
+}
+
+.header {
+
+}
+
+.subsections {
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
