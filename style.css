@@ -26,11 +26,13 @@
   
   .button:hover {
     background-color: grey;
+    color: white;
   }
   
   
   .button:active {
-  color: rgb(147, 117, 182);
+  background-color: #b01b1b;
+  color: white;
   }
 
 /* .title{}
@@ -43,28 +45,99 @@
   text-align: center;
 }
 
-.goals, .officers {
-  flex: 1;
+/* OFFICER STUFF */
+.officers-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+  background: #f5f5f5;
+  border-radius: 20px;
+  max-width: 800px;
+  margin: auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.pres{
+.officers-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 800px;
+}
+
+.officers-title{
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-decoration: underline;
+}
+
+.officer-category{
+  /* display: flex; */
+  /* flex-wrap: row wrap; */
+  flex: 1 1 300px;
+  min-width: 250px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.supreme-leaders{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.officer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+
+.officer img {
+  display: flex;
+  flex-wrap: wrap;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #444;
+  transition: transform 0.3s ease;
+}
+
+.officer img:hover {
+  transform: scale(1.1);
+}
+
+.officer-name{
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+  margin-bottom: -25px;
+}
+.officer-name:hover{
+  color: #b01b1b;
+}
+.officer-category h4 {
+  font-size: 28px;
+  margin-top: -30px;
+  margin-bottom: 0px;
 
 }
 
-.vp {
-
+.officer p{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: baseline;
+  margin-bottom: 30px;
 }
-
-.secretary{
-
-}
-
-.treasurer{
-
-}
-
-.hp-profile {
-  background-color: cadetblue;
-  width: 200px;
-  height: 200px;
-}
+/* END OF OFFICER STUFF */
