@@ -47,6 +47,24 @@
   flex: 1;
 }
 
-.presidents {
+.pres{
 
+}
+
+.vp {
+
+}
+
+.secretary{
+
+}
+
+.treasurer{
+
+}
+
+.hp-profile {
+  background-color: cadetblue;
+  width: 200px;
+  height: 200px;
 }
