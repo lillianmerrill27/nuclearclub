@@ -1,4 +1,34 @@
+h1 {
+  font-size: 28px;
+  margin-bottom: -30px;
+}
+
+h2.title{
+  font-size: 38px;
+  margin-bottom: -15px;
+  color: white;
+}
+
+.heading{
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  text-align: center;
+  background-color: #b01b1b;
+  color: white;
+}
+
+.topbuttons {
+  margin-top: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+}
+
 .button {
+    font-style:normal;
+    text-decoration: none;
     appearance: auto;
     text-rendering: auto;
     color: black;
@@ -15,17 +45,17 @@
     box-sizing: border-box;
     background-color: white;
     margin: 0em;
-    padding-block: 1px;
+    padding-block: 2px;
     padding-inline: 6px;
     border-width: 2px;
     border-style: outset;
-    border-color: buttonborder;
+    border-color:#d5d5d5;
     border-image: initial;
   }
   
   
   .button:hover {
-    background-color: grey;
+    background-color: rgb(140, 140, 140);
     color: white;
   }
   
@@ -77,25 +107,25 @@
 .officer-category{
   /* display: flex; */
   /* flex-wrap: row wrap; */
-  flex: 1 1 300px;
-  min-width: 250px;
+  flex: 1 1 100%;
+  min-width: 300px;
   text-align: center;
   margin-bottom: 30px;
 }
 
 .supreme-leaders{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .officer{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   gap: 15px;
   margin-top: 10px;
 }
@@ -132,6 +162,13 @@
   margin-top: -30px;
   margin-bottom: 0px;
 
+}
+
+@media (max-width: 600px) {
+  .officers-container {
+      flex-direction: column;
+      align-items: center;
+  }
 }
 
 .officer p{
