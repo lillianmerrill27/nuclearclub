@@ -33,16 +33,20 @@
   color: rgb(147, 117, 182);
   }
 
-.title{
-
-}
-
-.header {
-
-}
+/* .title{}
+.header {} */
 
 .subsections {
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  text-align: center;
+}
+
+.goals, .officers {
+  flex: 1;
+}
+
+.presidents {
+
 }
